@@ -10,25 +10,27 @@
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^9.11",
-        "laravel/sanctum": "^2.14.1",
-        "laravel/tinker": "^2.7",
-        "laravel/jetstream": "^2.8",
-        "predis/predis": "^1.1",
-        "laravel/scout": "^9.4",
-        "meilisearch/meilisearch-php": "^0.23.2",
         "http-interop/http-factory-guzzle": "^1.2",
-        "mollie/laravel-cashier-mollie": "^2.3"
+        "laravel/framework": "^9.11",
+        "laravel/jetstream": "^2.8",
+        "laravel/sanctum": "^2.14.1",
+        "laravel/scout": "^9.4",
+        "laravel/tinker": "^2.7",
+        "livewire/livewire": "^2.5",
+        "meilisearch/meilisearch-php": "^0.23.2",
+        "mollie/laravel-cashier-mollie": "^2.3",
+        "predis/predis": "^1.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
+        "laravel/horizon": "^5.9",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.1",
+        "pestphp/pest": "^1.16",
+        "pestphp/pest-plugin-laravel": "^1.1",
         "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.0",
-        "laravel/horizon": "^5.9",
-        "pestphp/pest-plugin-laravel": "^1.2"
+        "spatie/laravel-ignition": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -59,7 +61,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
